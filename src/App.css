@@ -59,8 +59,6 @@ i:hover{
   justify-content: center;
   align-items: center;
   gap: 5rem;
-  /* margin-top: 6rem;
-  margin-bottom: 6rem; */
   height: 100vh;
 }
 .info-container img{
@@ -97,9 +95,11 @@ i:hover{
 .content-box{
   display: flex;
   justify-content: center;
+  margin-bottom: 5rem;
 }
 .box{
-  border: 0.5px solid #00ff8c;
+  border: 1px solid #00884b;
+  border-radius: 1%;
   max-width: 90vw;
   min-width: 50vw;
   min-height: 50vh;
@@ -142,4 +142,23 @@ li {
   display: flex;
   margin-top: 2rem;
   justify-content: center;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+
+
+
+
+/* Footer */
+
+.foot-container{
+  width: 100vw;
+  height: 3rem;
+  background-color: #4d4d4d;
 }

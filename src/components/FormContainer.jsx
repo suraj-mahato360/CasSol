@@ -1,5 +1,5 @@
 import React from 'react'
-import Form1 from './Form1'
+import Form from './Form'
 import Calci from '../assets/calci.svg'
 
 const FormContainer = () => {
@@ -25,7 +25,7 @@ const FormContainer = () => {
                 </div>
             </div>
             <div className="forms">
-                <Form1 />
+                <Form />
             </div>
         </div>
         

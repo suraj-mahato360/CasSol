@@ -1,24 +1,21 @@
 import React from 'react'
 
-const Form6 = () => {
+const Form6 = ({ formData, setFormData }) => {
   return (
-    <div>
-        <div className="form-title">
-            <h2>Monthly Savings</h2>
-        </div>
-        <div className="form-input">
-        <form action="" method="post">
+        <form action="" method='POST'>
             <label htmlFor="">Emergency Fund</label>
-            <input type="text" placeholder='&#8377;0'/>
+            <input type="text" placeholder='&#8377;0'  value={formData.emergency_fund} onChange={(e) => {
+          setFormData({ ...formData, emergency_fund: e.target.value });
+        }}/>
             <label htmlFor="">Investments</label>
-            <input type="text" placeholder='&#8377;0'/>
+            <input type="text" placeholder='&#8377;0'  value={formData.investments} onChange={(e) => {
+          setFormData({ ...formData, investments: e.target.value });
+        }}/>
             <label htmlFor="">Retirement</label>
-            <input type="text" placeholder='&#8377;0'/>
-            <input type="button" value="Back" />
-            <input type="button" value="Next" />
+            <input type="text" placeholder='&#8377;0'  value={formData.retirement} onChange={(e) => {
+          setFormData({ ...formData, retirement: e.target.value });
+        }}/>
         </form>
-        </div>
-    </div>
   )
 }
 
